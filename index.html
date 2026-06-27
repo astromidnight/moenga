@@ -21,7 +21,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-<script src="./image-slot.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -104,7 +103,7 @@
 
     <!-- Col 2: photography -->
     <div data-hero-center="" style="height: 100vh; position: sticky; top: 0; overflow: hidden;">
-      <image-slot id="hero-photo" style="width: 124%; height: 100%; display: block; will-change: transform;" shape="rect" fit="cover" placeholder="DARK CONCRETE INTERIOR · RAW STONE BLOCK · WARM SHADOWS"></image-slot>
+      <img src="assets/bg_01.png" alt="" style="width: 124%; height: 100%; display: block; object-fit: cover; will-change: transform;" id="hero-photo">
     </div>
 
     <!-- Col 3: geometric + text -->
@@ -125,7 +124,7 @@
   <!-- MOSAIC STRIP -->
   <section data-mosaic="" style="display: grid; grid-template-columns: repeat(4, 1fr); width: 100%;">
     <div style="height: 340px; overflow: hidden;">
-      <image-slot id="mosaic-photo" style="width: 124%; height: 100%; display: block; will-change: transform;" shape="rect" fit="cover" placeholder="RAW STONE TEXTURE · CLOSE-UP"></image-slot>
+      <img src="assets/bg_02.png" alt="" style="width: 124%; height: 100%; display: block; object-fit: cover; will-change: transform;" id="mosaic-photo">
     </div>
     <div style="height: 340px; background: #F0EDE7 url('assets/bg_04.png') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; padding: 48px 48px 48px 55%;">
       <div data-reveal="" style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 30px; line-height: 1.25; color: #1A1714;">{{ txMosaicQ1 }}<br>{{ txMosaicQ2 }}<br>{{ txMosaicQ3 }}</div>
